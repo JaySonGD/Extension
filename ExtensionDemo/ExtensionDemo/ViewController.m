@@ -10,6 +10,7 @@
 #import "NSDate+Time.h"
 #import "UIView+Frame.h"
 #import "UITextField+Placeholder.h"
+#import "NSDictionary+LogProperty.h"
 
 @interface ViewController ()
 
@@ -21,13 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    NSDate *date = [NSDa]
-    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-    fmt.dateFormat = @"yyyy-MM-dd hh:mm:ss";
-    
-    NSDate *date = [fmt dateFromString:@"2016-02-22 12:34:56"];
-    
-    BOOL flag = date.isMinute;
+//    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+//    fmt.dateFormat = @"yyyy-MM-dd hh:mm:ss";
+//    
+//    NSDate *date = [fmt dateFromString:@"2016-02-22 12:34:56"];
+//    
+//    BOOL flag = date.isMinute;
     
     
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
@@ -35,6 +35,15 @@
 
     textField.placeholder = @"nime";
     [self.view addSubview:textField];
+    
+    
+    NSDictionary *json = @{
+                           
+                           @"name": @"jason",
+                           @"age": @(23),
+                           
+                           };
+    [json logProperty];
     
 }
 

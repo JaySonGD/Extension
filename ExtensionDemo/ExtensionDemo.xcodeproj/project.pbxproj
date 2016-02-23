@@ -48,6 +48,7 @@
 		ABC2BB8A1C7BEFC80035B961 /* UIView+Spring.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB6B1C7BEFC80035B961 /* UIView+Spring.m */; };
 		ABC2BB8E1C7BF21B0035B961 /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */; };
 		ABC2BB921C7BF7640035B961 /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB911C7BF7640035B961 /* UITextField+Placeholder.m */; };
+		ABC2BB961C7BFA6B0035B961 /* NSDictionary+LogProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB951C7BFA6B0035B961 /* NSDictionary+LogProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,8 @@
 		ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
 		ABC2BB901C7BF7640035B961 /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
 		ABC2BB911C7BF7640035B961 /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
+		ABC2BB941C7BFA6B0035B961 /* NSDictionary+LogProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LogProperty.h"; sourceTree = "<group>"; };
+		ABC2BB951C7BFA6B0035B961 /* NSDictionary+LogProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LogProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,7 @@
 		ABC2BB0D1C7BEFC80035B961 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ABC2BB931C7BFA6B0035B961 /* NSDictionary(LogModelProperty) */,
 				ABC2BB8F1C7BF7640035B961 /* UITextField(PlaceholderColor) */,
 				ABC2BB8B1C7BF21B0035B961 /* NSDate(Time) */,
 				ABC2BB0E1C7BEFC80035B961 /* AudioTools */,
@@ -572,6 +576,15 @@
 			path = "UITextField(PlaceholderColor)";
 			sourceTree = "<group>";
 		};
+		ABC2BB931C7BFA6B0035B961 /* NSDictionary(LogModelProperty) */ = {
+			isa = PBXGroup;
+			children = (
+				ABC2BB941C7BFA6B0035B961 /* NSDictionary+LogProperty.h */,
+				ABC2BB951C7BFA6B0035B961 /* NSDictionary+LogProperty.m */,
+			);
+			path = "NSDictionary(LogModelProperty)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -732,6 +745,7 @@
 				ABC2BB751C7BEFC80035B961 /* NSURLConnection+NetWork.m in Sources */,
 				ABC2BB811C7BEFC80035B961 /* UIImage+Logo.m in Sources */,
 				ABC2BB781C7BEFC80035B961 /* SandBoxPaths.m in Sources */,
+				ABC2BB961C7BFA6B0035B961 /* NSDictionary+LogProperty.m in Sources */,
 				ABC2BB831C7BEFC80035B961 /* UIImage+Rendering.m in Sources */,
 				ABC2BB7B1C7BEFC80035B961 /* SSKeychain.m in Sources */,
 				AB8046241C7BE709000A2708 /* main.m in Sources */,
