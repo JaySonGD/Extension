@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSDate+Time.h"
 #import "UIView+Frame.h"
+#import "UITextField+Placeholder.h"
 
 @interface ViewController ()
 
@@ -27,6 +28,13 @@
     NSDate *date = [fmt dateFromString:@"2016-02-22 12:34:56"];
     
     BOOL flag = date.isMinute;
+    
+    
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    textField.placeHolderColor = [UIColor redColor];
+
+    textField.placeholder = @"nime";
+    [self.view addSubview:textField];
     
 }
 

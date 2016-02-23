@@ -47,6 +47,7 @@
 		ABC2BB891C7BEFC80035B961 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB681C7BEFC80035B961 /* UIView+Frame.m */; };
 		ABC2BB8A1C7BEFC80035B961 /* UIView+Spring.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB6B1C7BEFC80035B961 /* UIView+Spring.m */; };
 		ABC2BB8E1C7BF21B0035B961 /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */; };
+		ABC2BB921C7BF7640035B961 /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB911C7BF7640035B961 /* UITextField+Placeholder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,8 @@
 		ABC2BB6B1C7BEFC80035B961 /* UIView+Spring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Spring.m"; sourceTree = "<group>"; };
 		ABC2BB8C1C7BF21B0035B961 /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
 		ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
+		ABC2BB901C7BF7640035B961 /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		ABC2BB911C7BF7640035B961 /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +244,7 @@
 		ABC2BB0D1C7BEFC80035B961 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ABC2BB8F1C7BF7640035B961 /* UITextField(PlaceholderColor) */,
 				ABC2BB8B1C7BF21B0035B961 /* NSDate(Time) */,
 				ABC2BB0E1C7BEFC80035B961 /* AudioTools */,
 				ABC2BB111C7BEFC80035B961 /* CoreStatus(信号检测) */,
@@ -559,6 +563,15 @@
 			path = "NSDate(Time)";
 			sourceTree = "<group>";
 		};
+		ABC2BB8F1C7BF7640035B961 /* UITextField(PlaceholderColor) */ = {
+			isa = PBXGroup;
+			children = (
+				ABC2BB901C7BF7640035B961 /* UITextField+Placeholder.h */,
+				ABC2BB911C7BF7640035B961 /* UITextField+Placeholder.m */,
+			);
+			path = "UITextField(PlaceholderColor)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -726,6 +739,7 @@
 				ABC2BB8A1C7BEFC80035B961 /* UIView+Spring.m in Sources */,
 				ABC2BB6E1C7BEFC80035B961 /* Reachability.m in Sources */,
 				ABC2BB841C7BEFC80035B961 /* UIImage+Stretch.m in Sources */,
+				ABC2BB921C7BF7640035B961 /* UITextField+Placeholder.m in Sources */,
 				ABC2BB721C7BEFC80035B961 /* NSObject+Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
