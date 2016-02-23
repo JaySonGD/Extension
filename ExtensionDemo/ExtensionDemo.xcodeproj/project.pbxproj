@@ -46,6 +46,7 @@
 		ABC2BB881C7BEFC80035B961 /* UIView+CAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB651C7BEFC80035B961 /* UIView+CAAnimation.m */; };
 		ABC2BB891C7BEFC80035B961 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB681C7BEFC80035B961 /* UIView+Frame.m */; };
 		ABC2BB8A1C7BEFC80035B961 /* UIView+Spring.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB6B1C7BEFC80035B961 /* UIView+Spring.m */; };
+		ABC2BB8E1C7BF21B0035B961 /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,8 @@
 		ABC2BB681C7BEFC80035B961 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		ABC2BB6A1C7BEFC80035B961 /* UIView+Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Spring.h"; sourceTree = "<group>"; };
 		ABC2BB6B1C7BEFC80035B961 /* UIView+Spring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Spring.m"; sourceTree = "<group>"; };
+		ABC2BB8C1C7BF21B0035B961 /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
+		ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,9 +201,9 @@
 				AB8046251C7BE709000A2708 /* AppDelegate.h */,
 				AB8046261C7BE709000A2708 /* AppDelegate.m */,
 				AB8046281C7BE709000A2708 /* ViewController.h */,
-				ABC2BB0D1C7BEFC80035B961 /* Extension */,
 				AB8046291C7BE709000A2708 /* ViewController.m */,
 				AB80462B1C7BE709000A2708 /* Main.storyboard */,
+				ABC2BB0D1C7BEFC80035B961 /* Extension */,
 				AB80462E1C7BE709000A2708 /* Assets.xcassets */,
 				AB8046301C7BE709000A2708 /* LaunchScreen.storyboard */,
 				AB8046331C7BE709000A2708 /* Info.plist */,
@@ -238,6 +241,7 @@
 		ABC2BB0D1C7BEFC80035B961 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ABC2BB8B1C7BF21B0035B961 /* NSDate(Time) */,
 				ABC2BB0E1C7BEFC80035B961 /* AudioTools */,
 				ABC2BB111C7BEFC80035B961 /* CoreStatus(信号检测) */,
 				ABC2BB171C7BEFC80035B961 /* NSArray(Log) */,
@@ -546,6 +550,15 @@
 			path = "UIView(Spring)";
 			sourceTree = "<group>";
 		};
+		ABC2BB8B1C7BF21B0035B961 /* NSDate(Time) */ = {
+			isa = PBXGroup;
+			children = (
+				ABC2BB8C1C7BF21B0035B961 /* NSDate+Time.h */,
+				ABC2BB8D1C7BF21B0035B961 /* NSDate+Time.m */,
+			);
+			path = "NSDate(Time)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -691,6 +704,7 @@
 				ABC2BB6C1C7BEFC80035B961 /* AudioTools.m in Sources */,
 				ABC2BB6F1C7BEFC80035B961 /* NSArray+Log.m in Sources */,
 				ABC2BB821C7BEFC80035B961 /* UIImage+Create.m in Sources */,
+				ABC2BB8E1C7BF21B0035B961 /* NSDate+Time.m in Sources */,
 				ABC2BB7D1C7BEFC80035B961 /* SoundTools.m in Sources */,
 				ABC2BB7C1C7BEFC80035B961 /* SSKeychainQuery.m in Sources */,
 				ABC2BB891C7BEFC80035B961 /* UIView+Frame.m in Sources */,

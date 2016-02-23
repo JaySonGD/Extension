@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSDate+Time.h"
+#import "UIView+Frame.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    NSDate *date = [NSDa]
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    fmt.dateFormat = @"yyyy-MM-dd hh:mm:ss";
+    
+    NSDate *date = [fmt dateFromString:@"2016-02-22 12:34:56"];
+    
+    BOOL flag = date.isMinute;
+    
 }
 
 - (void)didReceiveMemoryWarning {
