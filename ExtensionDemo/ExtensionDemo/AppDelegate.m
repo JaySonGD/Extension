@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <AFNetworkReachabilityManager.h>
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,48 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//   AFNetworkReachabilityManager *MGR = [AFNetworkReachabilityManager sharedManager];
+//    
+//    [MGR setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        
+//        NSLog(@"----%zd",status);
+//        
+//    }];
+//    [MGR startMonitoring];
+    
+    //1.创建网络监测管理者
+    AFNetworkReachabilityManager  *manager = [AFNetworkReachabilityManager sharedManager];
+    
+    //2.检测
+    /*
+     AFNetworkReachabilityStatusUnknown          = -1,   未知
+     AFNetworkReachabilityStatusNotReachable     = 0,    没有网络
+     AFNetworkReachabilityStatusReachableViaWWAN = 1,    蜂窝网络3G|4G
+     AFNetworkReachabilityStatusReachableViaWiFi = 2,    WIFI
+     */
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"wifi");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"蜂窝网络3G|4G");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"没有网络");
+                break;
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知");
+                break;
+            default:
+                break;
+        }
+    }];
+    
+    //3.开始监测
+    [manager startMonitoring];
+    
     return YES;
 }
 

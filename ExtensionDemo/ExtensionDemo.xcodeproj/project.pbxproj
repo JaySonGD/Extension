@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0417CE822C118C14A1DE0522 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D02BB8AACE0611CD96B634 /* libPods.a */; };
+		AB5144321C89A9E700F815AD /* PhotoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5144311C89A9E700F815AD /* PhotoTool.m */; };
 		AB8046241C7BE709000A2708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8046231C7BE709000A2708 /* main.m */; };
 		AB8046271C7BE709000A2708 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8046261C7BE709000A2708 /* AppDelegate.m */; };
 		AB80462A1C7BE709000A2708 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8046291C7BE709000A2708 /* ViewController.m */; };
@@ -73,6 +74,8 @@
 		4288AA66AF6EA5FCA9AC0851 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5574E1FE3836702982418877 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A7D02BB8AACE0611CD96B634 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5144301C89A9E700F815AD /* PhotoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTool.h; sourceTree = "<group>"; };
+		AB5144311C89A9E700F815AD /* PhotoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTool.m; sourceTree = "<group>"; };
 		AB80461F1C7BE709000A2708 /* ExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8046231C7BE709000A2708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB8046251C7BE709000A2708 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -203,6 +206,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AB51442F1C89A9E700F815AD /* PhotoTool */ = {
+			isa = PBXGroup;
+			children = (
+				AB5144301C89A9E700F815AD /* PhotoTool.h */,
+				AB5144311C89A9E700F815AD /* PhotoTool.m */,
+			);
+			path = PhotoTool;
+			sourceTree = "<group>";
+		};
 		AB8046161C7BE709000A2708 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +283,7 @@
 		ABC2BB0D1C7BEFC80035B961 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AB51442F1C89A9E700F815AD /* PhotoTool */,
 				ABC2BB931C7BFA6B0035B961 /* NSDictionary(LogModelProperty) */,
 				ABC2BB8F1C7BF7640035B961 /* UITextField(PlaceholderColor) */,
 				ABC2BB8B1C7BF21B0035B961 /* NSDate(Time) */,
@@ -801,6 +814,7 @@
 				AB8046271C7BE709000A2708 /* AppDelegate.m in Sources */,
 				ABC2BB771C7BEFC80035B961 /* RecorderTools.m in Sources */,
 				ABC2BB6D1C7BEFC80035B961 /* CoreStatus.m in Sources */,
+				AB5144321C89A9E700F815AD /* PhotoTool.m in Sources */,
 				ABC2BB791C7BEFC80035B961 /* NSString+Hash.m in Sources */,
 				ABC2BB6C1C7BEFC80035B961 /* AudioTools.m in Sources */,
 				ABC2BB6F1C7BEFC80035B961 /* NSArray+Log.m in Sources */,
