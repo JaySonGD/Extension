@@ -13,9 +13,15 @@
 #import "NSDictionary+LogProperty.h"
 #import "NSArray+Log.h"
 
+
+
+
 #import <AFNetworking/AFNetworking.h>
 
 #import "NSURLSession+NetWorking.h"
+
+
+#import "CrashManager.h"
 
 @interface ViewController ()
 
@@ -78,24 +84,24 @@
     //    [json logProperty];
     
     
-    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
-    [mgr.requestSerializer setValue:@"3bcf3816b17d161cf5e718148cf2add1" forHTTPHeaderField:@"apikey"];
-    
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    [mgr GET:@"http://v.juhe.cn/cba/teamList.php?key=153818eca2ce9ea8a6b98af999f5d581" parameters:parameters
-    progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSLog(@"%@",responseObject);
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+//    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+//    [mgr.requestSerializer setValue:@"3bcf3816b17d161cf5e718148cf2add1" forHTTPHeaderField:@"apikey"];
+//    
+//    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+//    [mgr GET:@"http://v.juhe.cn/cba/teamList.php?key=153818eca2ce9ea8a6b98af999f5d581" parameters:parameters
+//    progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//        NSLog(@"%@",responseObject);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
     
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+//    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
 //    [mgr.requestSerializer setValue:@"bt_app_android" forHTTPHeaderField:@"client_id"];
 //    [mgr.requestSerializer setValue:@"ffcda7a1c4ff338e05c42e7972ba7b8d" forHTTPHeaderField:@"client_secret"];
 //    [mgr.requestSerializer setValue:@"863575020819998" forHTTPHeaderField:@"track_deviceid"];
@@ -125,9 +131,9 @@
 
 
     
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"client_id"] = @"bt_app_android";
-    parameters[@"client_secret"] = @"ffcda7a1c4ff338e05c42e7972ba7b8d";
+//    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+//    parameters[@"client_id"] = @"bt_app_android";
+//    parameters[@"client_secret"] = @"ffcda7a1c4ff338e05c42e7972ba7b8d";
 
 //    parameters[@"track_deviceid"] = @"863575020819998";
 
@@ -148,20 +154,25 @@
 //    parameters[@"page"] = @"5";
 //    parameters[@"pagesize"] = @"20";
 
-
-
+//
+//
+//    
+//    [mgr POST:@"http://open4.bantangapp.com/topic/list" parameters:parameters
+//    progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//        NSLog(@"%@",responseObject);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
+//    
     
-    [mgr POST:@"http://open4.bantangapp.com/topic/list" parameters:parameters
-    progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSLog(@"%@",responseObject);
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
     
+//    NSDictionary * dic = [NSDictionary dictionary];
+//    NSString *name = nil;
+//    dic  = @{@"name": name};
     
-
+//    NSLog(@"%@", [CrashManager crashLogContent]);
 }
 
 - (void)didReceiveMemoryWarning {

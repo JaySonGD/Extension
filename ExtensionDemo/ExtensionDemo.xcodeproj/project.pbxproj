@@ -17,6 +17,8 @@
 		AB8046321C7BE709000A2708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8046301C7BE709000A2708 /* LaunchScreen.storyboard */; };
 		AB80463D1C7BE70A000A2708 /* ExtensionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB80463C1C7BE70A000A2708 /* ExtensionDemoTests.m */; };
 		AB8046481C7BE70A000A2708 /* ExtensionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8046471C7BE70A000A2708 /* ExtensionDemoUITests.m */; };
+		ABAE0BCA1CD884C200B7791F /* CrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAE0BC71CD884C200B7791F /* CrashManager.m */; };
+		ABAE0BCB1CD884C200B7791F /* UIViewController+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAE0BC91CD884C200B7791F /* UIViewController+Crash.m */; };
 		ABC2BB6C1C7BEFC80035B961 /* AudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB101C7BEFC80035B961 /* AudioTools.m */; };
 		ABC2BB6D1C7BEFC80035B961 /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB131C7BEFC80035B961 /* CoreStatus.m */; };
 		ABC2BB6E1C7BEFC80035B961 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2BB161C7BEFC80035B961 /* Reachability.m */; };
@@ -92,6 +94,10 @@
 		AB8046431C7BE70A000A2708 /* ExtensionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8046471C7BE70A000A2708 /* ExtensionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDemoUITests.m; sourceTree = "<group>"; };
 		AB8046491C7BE70A000A2708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAE0BC61CD884C200B7791F /* CrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashManager.h; sourceTree = "<group>"; };
+		ABAE0BC71CD884C200B7791F /* CrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashManager.m; sourceTree = "<group>"; };
+		ABAE0BC81CD884C200B7791F /* UIViewController+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Crash.h"; sourceTree = "<group>"; };
+		ABAE0BC91CD884C200B7791F /* UIViewController+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Crash.m"; sourceTree = "<group>"; };
 		ABC2BB0F1C7BEFC80035B961 /* AudioTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTools.h; sourceTree = "<group>"; };
 		ABC2BB101C7BEFC80035B961 /* AudioTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTools.m; sourceTree = "<group>"; };
 		ABC2BB121C7BEFC80035B961 /* CoreStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatus.h; sourceTree = "<group>"; };
@@ -280,9 +286,21 @@
 			path = ExtensionDemoUITests;
 			sourceTree = "<group>";
 		};
+		ABAE0BC51CD884C200B7791F /* CrashTool */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE0BC61CD884C200B7791F /* CrashManager.h */,
+				ABAE0BC71CD884C200B7791F /* CrashManager.m */,
+				ABAE0BC81CD884C200B7791F /* UIViewController+Crash.h */,
+				ABAE0BC91CD884C200B7791F /* UIViewController+Crash.m */,
+			);
+			path = CrashTool;
+			sourceTree = "<group>";
+		};
 		ABC2BB0D1C7BEFC80035B961 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ABAE0BC51CD884C200B7791F /* CrashTool */,
 				AB51442F1C89A9E700F815AD /* PhotoTool */,
 				ABC2BB931C7BFA6B0035B961 /* NSDictionary(LogModelProperty) */,
 				ABC2BB8F1C7BF7640035B961 /* UITextField(PlaceholderColor) */,
@@ -821,11 +839,13 @@
 				ABC2BB821C7BEFC80035B961 /* UIImage+Create.m in Sources */,
 				ABC2BB8E1C7BF21B0035B961 /* NSDate+Time.m in Sources */,
 				ABC2BB7D1C7BEFC80035B961 /* SoundTools.m in Sources */,
+				ABAE0BCB1CD884C200B7791F /* UIViewController+Crash.m in Sources */,
 				ABC2BB7C1C7BEFC80035B961 /* SSKeychainQuery.m in Sources */,
 				ABC2BB891C7BEFC80035B961 /* UIView+Frame.m in Sources */,
 				ABC2BB801C7BEFC80035B961 /* UIImage+icon.m in Sources */,
 				ABC2BB851C7BEFC80035B961 /* UIImage+View.m in Sources */,
 				ABC2BB7F1C7BEFC80035B961 /* UIImage+GetColor.m in Sources */,
+				ABAE0BCA1CD884C200B7791F /* CrashManager.m in Sources */,
 				ABC2BB711C7BEFC80035B961 /* NSObject+Attribute.m in Sources */,
 				ABC2BB701C7BEFC80035B961 /* NSDictionary+LogProperty.m in Sources */,
 				ABC2BB871C7BEFC80035B961 /* UIView+CAAnimation.m in Sources */,

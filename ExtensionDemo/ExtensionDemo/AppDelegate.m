@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CrashManager.h"
 
 #import <AFNetworkReachabilityManager.h>
 
@@ -61,6 +62,9 @@
     //3.开始监测
     [manager startMonitoring];
     
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+
     return YES;
 }
 
