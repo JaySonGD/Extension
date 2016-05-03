@@ -167,7 +167,7 @@
 //    }];
 //    
     
-    
+//    异常日志处理demo    
 //    NSDictionary * dic = [NSDictionary dictionary];
 //    NSString *name = nil;
 //    dic  = @{@"name": name};
